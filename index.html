@@ -1,4 +1,5 @@
 
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -79,7 +80,7 @@
                               <a class="nav-link" href="#footer">Contact Us</a>
                             </li>
                           </ul>
-                          <ul class="navbar-nav ml-auto">
+                          <ul class="navbar-nav ml-auto desktop">
                             <li class="nav-item active" data-toggle="collapse">
                           <form class="form-inline my-2 my-lg-0" >
                             <a class="btn btn-outline-success my-2 my-sm-0" href="https://in.bestosys.com/appointmentWizard.jsp?authToken=021321500964040000" target="_blank" type="button">Book Appointment</a>
@@ -96,7 +97,7 @@
 
     <!-- slider start -->
     <section id="slider">
-        <div id="carouselIndicators" class="carousel slide" data-ride="carousel">
+        <div id="carouselIndicators" class="carousel slide" ><!--data-ride="carousel"-->
             <!-- data-ride="carousel" -->
            <!-- <ol class="carousel-indicators">
               <li data-target="#carouselIndicators" data-slide-to="0" class="active"></li>
@@ -110,6 +111,7 @@
                  d-md-block">
                     <h2>Welcome to</h2>
                     <h1>Ashoka Dental Hospital</h1>
+                    <a class="btn btn-outline-success my-2 my-sm-0 appo-btn responsive" href="https://in.bestosys.com/appointmentWizard.jsp?authToken=021321500964040000" target="_blank" type="button">Book Appointment</a>
                   </div>
               </div>
               <div class="carousel-item">
@@ -449,7 +451,7 @@
          <h2 class="testim-text">Testimonials</h2>
             </div>
             <div class="row">
-              <div class="col-md-4 col-sm-2 desktop testimo-icon">
+              <div class="col-md-4 col-sm-2 testimo-icon">
                   <img src="image/icon/testimo-icon.jpg" class="img-fluid">
               </div>
                 <div class="col-md-8 col-sm-10 right-box">
@@ -465,11 +467,11 @@
                       <div class="carousel-item active">
                         <div class="star-rating">
                           <ul class="list-inline">
-                            <li class="list-inline-item"><i class="fa fa-star-o"></i></li>
-                            <li class="list-inline-item"><i class="fa fa-star-o"></i></li>
-                            <li class="list-inline-item"><i class="fa fa-star-o"></i></li>
-                            <li class="list-inline-item"><i class="fa fa-star-o"></i></li>
-                            <li class="list-inline-item"><i class="fa fa-star-o"></i></li>
+                            <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                            <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                            <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                            <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                            <li class="list-inline-item"><i class="fa fa-star"></i></li>
                           </ul>
                         </div>
                         <p class="testimonial-text">Dr. Vivek is a great dentist, he is not only professional but really concerned about his patients too.
@@ -481,11 +483,11 @@
                       <div class="carousel-item">
                         <div class="star-rating">
                           <ul class="list-inline">
-                            <li class="list-inline-item"><i class="fa fa-star-o"></i></li>
-                            <li class="list-inline-item"><i class="fa fa-star-o"></i></li>
-                            <li class="list-inline-item"><i class="fa fa-star-o"></i></li>
-                            <li class="list-inline-item"><i class="fa fa-star-o"></i></li>
-                            <li class="list-inline-item"><i class="fa fa-star-o"></i></li>
+                            <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                            <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                            <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                            <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                            <li class="list-inline-item"><i class="fa fa-star"></i></li>
                           </ul>
                         </div>
                         <p class="testimonial-text">Dr. Vivek Goel knows his work and has a very good hand at it. His pleasing personality is an icing on the cake. He is a
@@ -496,11 +498,11 @@
                       <div class="carousel-item">
                         <div class="star-rating">
                           <ul class="list-inline">
-                            <li class="list-inline-item"><i class="fa fa-star-o"></i></li>
-                            <li class="list-inline-item"><i class="fa fa-star-o"></i></li>
-                            <li class="list-inline-item"><i class="fa fa-star-o"></i></li>
-                            <li class="list-inline-item"><i class="fa fa-star-o"></i></li>
-                            <li class="list-inline-item"><i class="fa fa-star-o"></i></li>
+                            <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                            <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                            <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                            <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                            <li class="list-inline-item"><i class="fa fa-star"></i></li>
                           </ul>
                         </div>
                         <p class="testimonial-text">I am very happy with the treatment I received at Ashoka dental Hospital. Dr. Vivek Goel is very thorough in his
@@ -539,20 +541,20 @@
         <div class="col-md-6">
           <h1>Contact Us</h1>
           <div class="form-box">
-            <form>
+            <form action="sendmail.php" method="post" id="contact-form">
               <div class="form-group">
-                  <input type="text" name="name" class="form-control" id="exampleFormControlinput1" placeholder="Name">
+                  <input type="text" name="name" class="form-control" id="name" placeholder="Name" required>
               </div>
               <div class="form-group">
-                  <input type="tel" name="Phone" class="form-control" id="exampleFormControlinput1" placeholder="Phone No.">
+                  <input type="tel" name="phone" class="form-control" id="phone" placeholder="Phone No." required>
               </div>
               <div class="form-group">
-                  <input type="email" name="email" class="form-control" id="exampleFormControlinput1" placeholder="Email">
+                  <input type="email" name="email" class="form-control" id="email" placeholder="Email" required>
               </div>
               <div class="form-group">
-                  <textarea class="form-control" rows="3" placeholder="How can We Help You" name="How can We Help You" id="msg1"></textarea>
+                  <textarea class="form-control" rows="3" placeholder="How can We Help You" name="message" id="message"></textarea>
               </div>
-              <button type="submit" class="form-btn">Submit</button>
+              <input type="submit" class="form-btn" value="Submit">
           </form>
           </div>
         </div>
@@ -567,7 +569,7 @@
               <img src="image/icon/email.png">
             </div>
             <div class="col-md-10">
-              <a href="#" class="info-text">vivek.bds@gmail.com</a>
+              <a href="mailto:vivek.bds@gmail.com" class="info-text">vivek.bds@gmail.com</a>
             </div>
           </div>
 
@@ -576,7 +578,7 @@
               <img src="image/icon/contact.png">
             </div>
             <div class="col-md-10">
-              <a href="#" class="info-text">08607724888</a>
+              <a href="tel:8607724888" class="info-text">08607724888</a>
             </div>
           </div>
 
@@ -596,7 +598,7 @@
               <img src="image/icon/time.png">
             </div>
             <div class="col-md-10">
-              <a href="#" class="info-text"><b>Monday To Saturday:</b> 9am – 2pm, 3 – 6pm<br> <b>Sunday:</b> Closed</a>
+              <a href="#" class="info-text"><b>Monday To Saturday:</b> 9am – 2pm, 3pm – 6pm<br> <b>Sunday:</b> Closed</a>
             </div>
           </div>
          
@@ -610,7 +612,7 @@
                 <a href="#">
                     <i class="fa fa-facebook-f"></i>
                 </a>
-                <a href="#">
+                <a href="https://wa.me/8607724888">
                     <i class="fa fa-whatsapp"></i>
                 </a>
                 <a href="#">
